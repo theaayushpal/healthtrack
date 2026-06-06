@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { background: #0F0F1A; color: #E8E8F0; font-family: 'Inter', system-ui, sans-serif; margin: 0; min-height: 100vh; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0F0F1A; }
+::-webkit-scrollbar-thumb { background: #2A2A45; border-radius: 3px; }
+
+input, select, textarea {
+  background: rgba(255,255,255,0.04) !important; border: 1px solid #2A2A45 !important;
+  border-radius: 10px !important; color: #E8E8F0 !important; padding: 10px 14px;
+  font-size: 14px; font-family: inherit; outline: none; transition: border-color .2s; width: 100%;
+}
+input:focus, select:focus, textarea:focus { border-color: #6C63FF !important; box-shadow: 0 0 0 3px rgba(108,99,255,.15) !important; }
+select option { background: #16162A; }
+input[type=range] { padding:0 !important; border:none !important; box-shadow:none !important; background:transparent !important; }
+
+.text-gradient { background: linear-gradient(135deg,#6C63FF,#FF6584); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+.animate-fade-up { animation: fadeUp .3s ease both; }
